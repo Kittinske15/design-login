@@ -3,3 +3,15 @@
 .vscode
 .env
 /package-lock.json
+
+*.log
+*.pot
+*.pyc
+*.py[cod]
+__pycache__/
+/media
+/venv
+htmlcov/
+# dont ignore these files
+!.gitignore
+!/media/pictures
