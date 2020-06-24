@@ -70,9 +70,7 @@
         lastDate = newDate;
 
         for (var i = 0; i < data.length - 10; i++) {
-          // IMPORTANT
-          // we reset the x and y of the data which is out of drawing area
-          // to prevent memory leaks
+
           data[i].x = newDate - XAXISRANGE - TICKINTERVAL;
           data[i].y = 0;
         }
@@ -86,7 +84,6 @@
       }
 
       function resetData() {
-        // Alternatively, you can also reset the data at certain intervals to prevent creating a huge series
         data = data.slice(data.length - 10, data.length);
       }
     </script>
